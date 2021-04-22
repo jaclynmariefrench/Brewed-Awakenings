@@ -17,10 +17,10 @@ const applicationHTML = `
     </section>
 </article>
 
-<article class="orders">
+<section class="detail--column list orders">
     <h2>Orders</h2>
     ${Orders()}
-</article>
+</section>
 `
 
 mainContainer.innerHTML = applicationHTML
