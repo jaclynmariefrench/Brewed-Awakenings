@@ -12,13 +12,7 @@ document.addEventListener(
             for (const employee of employees) {
                 if (employee.id === parseInt(employeeId)) {
 
-                    const employeeOrders = orders.filter(  // <--- Go to YouTube and search "javascript array filter"
-                        (order) => {
-                            if (order.employeeId === employee.id) {
-                                return true
-                            }
-                        }
-                    )
+                    const employeeOrders = orders.filter(order => order.employeeId === employee.id)  // <--- Go to YouTube and search "javascript array filter"
 
                     window.alert(` ${employee.name} sold ${employeeOrders.length} products `)
                 }
